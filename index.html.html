@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViralZone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ViralZone</h1>
+
+<nav>
+<a href="#" onclick="showSection('home'); return false;">Home</a>
+<a href="#" onclick="showSection('ai-tools'); return false;">AI Tools</a>
+<a href="#" onclick="showSection('leaderboard'); return false;">Leaderboard</a>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<div id="home">
+
+<h2>Welcome to ViralZone</h2>
+
+<p>
+Discover quizzes, gaming content, AI tools, and fun challenges all in one place.
+</p>
+
+<button>Start Exploring</button>
+
+<section>
+
+<h2>Quick Challenge</h2>
+
+<div>
+<h3>What's Your Vibe?</h3>
+
+<p>Take a quick quiz and discover your vibe.</p>
+
+<button id="takeQuiz">Take Quiz</button>
+
+<div id="quiz" style="display: none;">
+<h2>Project Corridor Quiz</h2>
+<p id="question"></p>
+<div id="answers"></div>
+<p id="score"></p>
+<button id="nextQuestion">Next</button>
+</div>
+</div>
+
+<!-- MAKE ME LAUGH -->
+<div>
+<h3>Make Me Laugh</h3>
+<p>Get a random joke and have a laugh!</p>
+<button onclick="makeMeLaugh()">😂 Make Me Laugh</button>
+</div>
+
+<!-- RANDOM CHALLENGE -->
+<div>
+<h3>Random Challenge</h3>
+<p>Get a random challenge and try it!</p>
+<button onclick="randomChallenge()">🎯 Random Challenge</button>
+</div>
+
+</section>
+
+</div>
+
+<!-- AI TOOLS -->
+<div id="ai-tools" style="display:none;">
+
+<h2>AI Tools</h2>
+
+<p>Ask me anything about quizzes, games, or AI tools.</p>
+
+<div id="chatBox"
+style="height:200px; overflow-y:auto; border:1px solid #ccc; padding:10px; margin-bottom:10px;">
+</div>
+
+<input
+type="text"
+id="chatInput"
+placeholder="Type your question..."
+>
+
+<button id="sendChat">Send</button>
+
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboard" style="display:none;">
+
+<h2>🏆 Leaderboard</h2>
+
+<p>See the top players and quiz champions.</p>
+
+<div class="leaderboard-card">
+
+<h3>🏆 Top Players</h3>
+
+<p>🥇 Player 1 — 100 points</p>
+<p>🥈 Player 2 — 80 points</p>
+<p>🥉 Player 3 — 60 points</p>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+<footer>
+<p>© 2026 ViralZone. All rights reserved.</p>
+<p>Built with 💜 for fun, challenges, and creativity.</p>
+</footer>
+</body>
+</html>
